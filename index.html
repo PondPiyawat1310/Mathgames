@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.Css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    
+        <h3 class="title">MathsGames</h3>
+        <div class="col-12 start mt-3">
+        <button class="btn btn-primary rounded-pill px-3" type="button" onclick="start()">start</button>
+        </div>
+        <div class="col-12 score mt-3" style="display: flex; justify-content: center;">
+            <label class="score">คะแนน: <span id="score"></span>/<span id="point"></span> </label>
+        </div>
+    <div class="container">
+        <input  type="box" id="num1" readonly>
+         <label for="btn-group"><input type="box" id="mark"readonly></label>
+        <input  type="box" id="num2"readonly><span>=<span>
+        <input id="answer" type="text">
+
+    </div>
+        <div class="col-12 option">
+            <label class="btn btn-outline-primary" for="btncheck1" onclick="symbol('+')">+</label>
+            <label class="btn btn-outline-primary" for="btncheck2" onclick="symbol('-')">-</label>
+            <label class="btn btn-outline-primary" for="btncheck3" onclick="symbol('x')">x</label>
+            <label class="btn btn-outline-primary" for="btncheck3" onclick="symbol('÷')">÷</label>
+        </div>
+        <div class="col-12 answer mt-4">
+            <button class="btn btn-success rounded-pill px-3" type="button" onclick="answer()">answer</button>
+        </div>
+        <div class="col-12">
+            <div class="col-12 result mt-4">
+                <label><span><h1 id="result"></h1></span></label>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./main.js"></script>
